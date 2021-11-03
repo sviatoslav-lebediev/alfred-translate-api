@@ -111,7 +111,7 @@ $text = $argv[1];
 // Cycle through every enabled language and get a translation
 foreach ( $languages as $language ) :
 	// Base API url
-	$query  = 'https://www.googleapis.com/language/translate/v2?q=';
+	$query  = 'https://translation.googleapis.com/language/translate/v2?q=';
 	// Make sure the text is urlencoded, add in the target language code and the API key
 	$query .= urlencode( $text ) . "&target={$language}&key={$api_key}";
 
